@@ -6,6 +6,7 @@ alkabach Infra repository
 Данные для подключения
 
 bastion_IP=62.84.117.16
+
 someinternalhost_IP=10.128.0.16
 
 Для подключения из консоли в одну команду, нужно добавить файл ~/.ssh/config с содержимым:
