@@ -58,3 +58,31 @@ yc compute instance create \
 ```
 
 * [metadata.yaml](https://github.com/Otus-DevOps-2021-08/alkabach_infra/blob/cloud-testapp/install_mongodb.sh) - файл метаданных, с помощью которого разворачивается ВМ с готовым приожением
+
+
+## ДЗ 5
+
+### Основное ДЗ
+
+Создан конфиг packer [ubuntu16.json](https://github.com/Otus-DevOps-2021-08/alkabach_infra/blob/packer/ubuntu16.json)
+
+Запуск сборки образа
+
+`packer build -var-file=variables.json.example ubuntu16.json`
+
+В результате получаем базовый образ виртуальной машины
+
+### Дополнительное ДЗ
+
+Создан конфиг packer с уже готовым приложением [immutable.json](https://github.com/Otus-DevOps-2021-08/alkabach_infra/blob/packer/immutable.json)
+
+Запуск сборки образа
+packer build -var-file=variables.json.example immutable.json
+
+Создание ВМ с помощью Yandex.Cloud CLI
+
+`sudo bash scripts/create_reddit_full_vm.sh`
+
+Проверить созданный образ можно по адресу
+
+`http://<внешний IP машины>:9292`
