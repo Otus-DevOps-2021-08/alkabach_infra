@@ -86,3 +86,20 @@ packer build -var-file=variables.json.example immutable.json
 Проверить созданный образ можно по адресу
 
 `http://<внешний IP машины>:9292`
+
+## ДЗ 5
+
+### Основное ДЗ
+
+Создан файл terraform  [main.tf](https://github.com/Otus-DevOps-2021-08/alkabach_infra/blob/terraform/main.tf)
+
+Запуск создания приложения с помощью terraform
+
+```
+terraform init
+terraform plan
+terraform apply -auto-approve
+
+Для удаления ресурсов terraform:
+terraform destroy
+```

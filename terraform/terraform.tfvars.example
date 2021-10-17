@@ -1,0 +1,8 @@
+cloud_id                 = "b1gdhuqg5q0g7deki3b9"
+folder_id                = "b1g5o27sp0noarq3v8n7"
+zone                     = "ru-central1-a"
+image_id                 = "fd8h84fkh140670sc0re"
+public_key_path          = "Path_to_publickey"
+subnet_id                = "e9b54s0vpp610sh5ng36"
+service_account_key_file = "Path_to_service_account_key_file"
+private_key              = "Path_to_privatekey"
